@@ -8,7 +8,7 @@ using System.Linq;
     {
         private static Dictionary<int, T> instancesDic = new Dictionary<int, T>();
 
-        public static Bind(T instance, int id = 0)
+        public static void Bind(T instance, int id = 0)
         {
             instancesDic.Add(id, instance);
         }
